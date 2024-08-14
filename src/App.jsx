@@ -43,7 +43,7 @@ function App() {
       <h1>
       Kathmandu Temp Now: {tempKTM}c
       </h1>
-      <Poke/>
+
     </div>
     
   )
