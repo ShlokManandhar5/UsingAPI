@@ -27,8 +27,6 @@ function App() {
       KTM.json()
       .then( json => {
         setTempKTM(json.current.temp_c)
-        console.log(json);
-        
       })
     }
     Data()
