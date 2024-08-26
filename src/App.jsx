@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Poke from './components/Poke'
+import SortDate from './components/SortDate'
 
 function App() {
 
@@ -42,6 +43,9 @@ function App() {
       Kathmandu Temp Now: {tempKTM}c
       </h1>
 
+
+
+    <SortDate/>
     </div>
     
   )
