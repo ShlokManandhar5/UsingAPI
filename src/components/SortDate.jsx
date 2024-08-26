@@ -3,7 +3,7 @@ import data from './data'
 
 const SortDate = () => {
     const [dateList, setDateList] = useState([])
-
+    const [sortList,setSortList]= useState([])
     useEffect(() => {
       setDateList(data)
     },[])
@@ -11,8 +11,7 @@ const SortDate = () => {
     useEffect(() => {
         const sortdate =() => {
             dateList.sort((a,b)=> new Date(a.date)- new Date(b.date))
-            console.log(dateList);
-            
+            setSortList(dateList)
           }
           sortdate()
     },[])
@@ -24,7 +23,7 @@ const SortDate = () => {
             <h1>Date Sort</h1>
             <select>
                 {
-                    dateList.map((items,index=id) => {
+                    sortList.map((items,index=id) => {
                         return( 
                             <option>{items.date}</option> 
                         )
